@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Product, type: :model do
-  describe 'Product has db column'
+  describe 'Product has db column' do
     it {is_expected.to have_db_column :id}
     it {is_expected.to have_db_column :name}
     it {is_expected.to have_db_column :price}
@@ -19,6 +19,3 @@ RSpec.describe Product, type: :model do
   end
 
 end
-
-
-
